@@ -29,7 +29,7 @@ function animMeter(){
 //animMeter();
 
       $('#tab-container').easytabs({
-        animate			: true,
+        animate			: false,
         updateHash		: true,
         transitionIn	: 'slideDown',
         transitionOut	: 'slideUp',
