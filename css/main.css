@@ -604,7 +604,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 .asbestos > span{
   background-color: #7f8c8d;
 }
-.customsarine > span > span, .nostripes > span:after{
+.customsarine > span > span, .customsarine > span:after{
   -webkit-animation: none;
   background-color: #7f8c8d;
 }
