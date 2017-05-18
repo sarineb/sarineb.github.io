@@ -371,10 +371,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   text-align: center;
   opacity:0;
   filter: alpha(opacity=0);
-  -webkit-transition: all 450ms ease-out 0s;
-  -moz-transition: all 450ms ease-out 0s;
-  -o-transition: all 450ms ease-out 0s;
-  transition: all 450ms ease-out 0s;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
