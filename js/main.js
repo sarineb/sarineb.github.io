@@ -26,7 +26,7 @@ function animMeter(){
                     }, 1200);
             });
 }
-animMeter();
+//animMeter();
 
       $('#tab-container').easytabs({
         animate			: true,
