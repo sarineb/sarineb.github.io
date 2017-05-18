@@ -70,11 +70,11 @@ dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
 a { 
   text-decoration: none;
   color: #E74C3C;
-  -webkit-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
-  -moz-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
-  -ms-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
-  -o-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
-  transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 a:hover, a:focus, a:active { text-decoration: none; border: none;color: #C0392B }
 /* MEDIA */
@@ -371,10 +371,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   text-align: center;
   opacity:0;
   filter: alpha(opacity=0);
-  -webkit-transition: all 450ms ease-out 0s;
-  -moz-transition: all 450ms ease-out 0s;
-  -o-transition: all 450ms ease-out 0s;
-  transition: all 450ms ease-out 0s;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -428,9 +428,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   *zoom:1;
   position: relative;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  transition: none !important;
 }
 .btn:hover{
   color: #ccc;
