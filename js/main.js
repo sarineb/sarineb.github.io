@@ -36,7 +36,7 @@ function animMeter(){
         animationSpeed	: 600,
         tabActiveClass	: 'active'}).bind('easytabs:midTransition', function(event, $clicked, $targetPanel){
             if($targetPanel.selector=='#resume'){
-                    animMeter();
+                    //animMeter();
             }
         });
     });
