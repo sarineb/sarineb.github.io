@@ -375,18 +375,18 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   -moz-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
 }
 .image:hover .image-overlay{
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  transform: rotateY(0deg);
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
 }
 .image-overlay .image-link{
   position: relative;
