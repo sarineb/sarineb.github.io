@@ -624,12 +624,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-color: #c0392b;
 }
 .asbestos > span{
-  background-color: #7f8c8d;
+  background-color: #cccccc;
 }
 
-.nobackground > span{
-  background-color: #7f8c8d;
-}
 
 .nostripes > span > span, .nostripes > span:after {
   -webkit-animation: none;
