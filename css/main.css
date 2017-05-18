@@ -163,7 +163,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* Backgrounds */
 
 .bg-1{
-  background-image: url('../images/background-picture.png');
+  background-image: url('../images/background-picture.jpg');
 }
 
 /* Header */
@@ -551,7 +551,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   z-index: 1;
   -webkit-background-size: 50px 50px;
   -moz-background-size: 50px 50px;
-  -webkit-animation: move 2s linear infinite;
+  -webkit-animation: none !important;
   -webkit-border-top-right-radius: 8px;
   -webkit-border-bottom-right-radius: 8px;
   -moz-border-radius-topright: 8px;
