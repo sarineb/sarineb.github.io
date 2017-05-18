@@ -551,7 +551,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   z-index: 1;
   -webkit-background-size: 50px 50px;
   -moz-background-size: 50px 50px;
-  -webkit-animation: none !important;
+  -webkit-animation: move 2s linear infinite;
   -webkit-border-top-right-radius: 8px;
   -webkit-border-bottom-right-radius: 8px;
   -moz-border-radius-topright: 8px;
@@ -581,33 +581,30 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .emerald > span {
-  -webkit-animation: none;
   background-color: #2ecc71;
 
 }
 
 .carrot > span {
-  -webkit-animation: none;
   background-color: #e67e22;
 
 }
 .wisteria > span{
-  -webkit-animation: none;
   background-color: #8e44ad;
 }
 .sunflower > span{
-  -webkit-animation: none;
   background-color: #f1c40f;
 }
 .midnight > span{
-  -webkit-animation: none;
   background-color: #2c3e50;
 }
 .pomengrate > span{
-  -webkit-animation: none;
   background-color: #c0392b;
 }
 .asbestos > span{
+  background-color: #7f8c8d;
+}
+.customsarine > span > span, .nostripes > span:after{
   -webkit-animation: none;
   background-color: #7f8c8d;
 }
