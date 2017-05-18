@@ -563,12 +563,12 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   -moz-linear-gradient(
     -45deg, 
     rgba(255, 255, 255, .2) 25%, 
-    transparent 25%, 
-    transparent 50%, 
+    rgba(255, 255, 255, .2) 25%, 
+    rgba(255, 255, 255, .2) 50%, 
     rgba(255, 255, 255, .2) 50%, 
     rgba(255, 255, 255, .2) 75%, 
-    transparent 75%, 
-    transparent
+    rgba(255, 255, 255, .2) 75%, 
+    rgba(255, 255, 255, .2)
     );
   z-index: 1;
   -webkit-background-size: 50px 50px;
