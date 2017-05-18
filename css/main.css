@@ -606,9 +606,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 .customsarine > span > span, .customsarine > span:after{
   -webkit-animation: none;
-  background-color: #7f8c8d;
+  background-color: #c0392b;
 }
-.nostripes > span > span, .nostripes > span:after {
+.nostripes > span > span, .nostripes > span:after{
   -webkit-animation: none;
   background-image: none;
 }
