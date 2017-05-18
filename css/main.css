@@ -628,7 +628,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .nobackground > span{
-  background-color: #b2b2b2;
+  background-color: #666666;
 }
 
 .nostripes > span > span, .nostripes > span:after {
