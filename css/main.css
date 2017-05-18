@@ -567,9 +567,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   overflow: hidden;
 }
 
-/*.animate > span:after {
+.animate > span:after {
   display: none;
-}*/
+}
 
 @-webkit-keyframes move {
   0% {
