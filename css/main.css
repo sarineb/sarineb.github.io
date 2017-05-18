@@ -371,10 +371,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   text-align: center;
   opacity:0;
   filter: alpha(opacity=0);
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
+  -webkit-transition: all 450ms ease-out 0s;
+  -moz-transition: all 450ms ease-out 0s;
+  -o-transition: all 450ms ease-out 0s;
+  transition: all 450ms ease-out 0s;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -581,27 +581,34 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .emerald > span {
+  -webkit-animation: none;
   background-color: #2ecc71;
 
 }
 
 .carrot > span {
+  -webkit-animation: none;
   background-color: #e67e22;
 
 }
 .wisteria > span{
+  -webkit-animation: none;
   background-color: #8e44ad;
 }
 .sunflower > span{
+  -webkit-animation: none;
   background-color: #f1c40f;
 }
 .midnight > span{
+  -webkit-animation: none;
   background-color: #2c3e50;
 }
 .pomengrate > span{
+  -webkit-animation: none;
   background-color: #c0392b;
 }
 .asbestos > span{
+  -webkit-animation: none;
   background-color: #7f8c8d;
 }
 .nostripes > span > span, .nostripes > span:after {
