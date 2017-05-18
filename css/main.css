@@ -544,7 +544,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 .meter > span  > span{
   margin-left: 4px;
-  color: #fff;
+  color: #000;
 }
 .meter > span:after, .animate > span > span {
   content: "";
