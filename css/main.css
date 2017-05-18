@@ -624,7 +624,8 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-color: #c0392b;
 }
 .asbestos > span{
-  background-color: #cccccc;
+  /*background-color: #cccccc;*/
+  background-color: #e5e5e5;
 }
 
 
