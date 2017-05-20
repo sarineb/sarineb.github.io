@@ -75,6 +75,9 @@
                             <h4>
                                 Predicting movement variability using machine learning with brain signals
                             </h4>
+                            <p>
+                                See the paper I published <a href="phd-files/Babikian-2017.pdf">here</a>.
+                            </p>
                                     <h5>
                                         Aim
                                     </h5>
@@ -95,11 +98,57 @@
                                         Experimental data
                                     </h5>
                                     <p>
-                                        EEG and fingertip force data was obtained while healthy subjects performed a bimanual, two-finger force matching task where repetitions of the same task could be implemented using right>left or left>right forces.
+                                        EEG and fingertip force data were obtained while healthy participants performed a bimanual, two-finger force matching task. Repetitions of the same task could be implemented using either right>left or left>right forces.
                                         Our dataset consisted of EEG signals right before movement onset, as well as true force labels determined from the fingertip force sensors (right>left or left>right).
                                     </p>
+                                    <h5>
+                                        EEG Prediction
+                                    </h5>
+                                    <p>
+                                        Our dataset consisted of EEG signals right before movement onset, as well as true force labels determined using the fingertip force sensors (right>left or left>right).
+                                        We used Linear Discriminant Analysis (LDA) with EEG preprocessing using Common Spatial Patterns (CSP) to predict if the upcoming repetition belonged to right>left or left>right (with leave-one-out cross-validation).
 
-                        </div>
+                                    </p>
+                                    <h5>
+                                        Results
+                                    </h5>
+                                    <p>
+                                      Below are the prediction results compared with the true labels for all subjects (from a linear mixed-effects model to account for random effects for participant), as well as the most important features for prediction displayed on a head map of brain activity.
+                                      An ROC curve averaged across all participants resulted in a 72% AUC.
+                                    </p>
+                                    <!--<div class="g2">-->
+                                    <!--<div class="image">-->
+                                      <div style="text-align: center;">
+                                        <img HEIGHT="363" WIDTH="600" src="images/Fig3.png" alt="image">
+
+                                      </div>
+                                      <p><small>a. EEG-predicted classes versus force-based classes of all 18 participants. For each
+                                        participant, the classifier outputs of repetitions from each class (FL > FR and FR > FL)
+                                        were averaged and joined by a line. Most participants show a clear distinction between
+                                        the two classes as indicated by a positive slope of the line. Linear mixed-effect modeling
+                                        demonstrated a significant effect of force-based repetition class on EEG-based classifier
+                                        output (p < 0.0001, ****); b. the most important and second most important
+                                        common spatial patterns (CSP) used for the EEG-based classification of
+                                        repetitions where FL > FR (left) and repetitions where FR > FL (right), averaged across
+                                        18 participants. Enhanced EEG amplitudes are seen in the left hand motor area when
+                                        FL leads (top left), and vice-versa when FR leads.</small></p>
+                                    <!--</div>-->
+                                  <!--</div>-->
+
+                                  <div style="text-align: center;">
+                                    <img HEIGHT="457" WIDTH="500" src="images/Fig4.png" alt="image">
+
+                                  </div>
+
+                                  <p><small>Individual ROC curves of all participants and overall ROC curve across all
+                                    participants. The colored lines represent each individual participant’s ROC curve derived
+                                    from the normalized outputs of all leave-one-out cross-validated classifiers. The bold black
+                                    curve is the overall ROC across all participants, and is determined using all participants’
+                                    normalized classifier outputs. The area under the curve (AUC) of the overall ROC curve
+                                    is 0.72.</small></p>
+
+
+            </div>
 
               <!-- End eeg project Data -->
 
