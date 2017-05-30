@@ -22307,71 +22307,6 @@ YRjmnPD/AClM447781SpAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#for later: attempting to get weather data (example from https://github.com/joshmalina/pollution/blob/master/notebooks/Build_historical_weather_data.ipynb)</span>
-<span class="kn">import</span> <span class="nn">urllib2</span>
-<span class="kn">import</span> <span class="nn">json</span>
-<span class="n">API_KEY</span><span class="o">=</span><span class="s1">&#39;8b52894b5a5e0cbf&#39;</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://api.wunderground.com/api/&#39;</span> <span class="o">+</span> <span class="n">API_KEY</span> <span class="o">+</span> <span class="s1">&#39;/history_&#39;</span> <span class="o">+</span>  <span class="s1">&#39;2013&#39;</span> <span class="o">+</span> <span class="s1">&#39;1&#39;</span> <span class="o">+</span> <span class="s1">&#39;2&#39;</span> <span class="o">+</span><span class="s1">&#39;/geolookup/q/airport/OLBA.json&#39;</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">json_string</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">parsed_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span>
-<span class="c1">#dframe = pd.DataFrame(parsed_json[&#39;history&#39;][&#39;observations&#39;]) #need access to history for this to work</span>
-<span class="n">dframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">parsed_json</span><span class="p">)</span>
-<span class="n">dframe</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[110]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>features</th>
-      <td>{u'geolookup': 1, u'history': 1}</td>
-    </tr>
-    <tr>
-      <th>results</th>
-      <td>[{u'city': u'Beirut International', u'name': u...</td>
-    </tr>
-    <tr>
-      <th>termsofService</th>
-      <td>http://www.wunderground.com/weather/api/d/term...</td>
-    </tr>
-    <tr>
-      <th>version</th>
-      <td>0.1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[188]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -25341,7 +25276,7 @@ Name: Type of Internet Connection, dtype: int64</pre>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">roc_curve</span><span class="p">,</span> <span class="n">auc</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">StratifiedKFold</span>
 
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">df_x</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df_y</span>
@@ -25353,7 +25288,7 @@ Name: Type of Internet Connection, dtype: int64</pre>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">X</span><span class="p">,</span> <span class="n">random_state</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="mi">200</span> <span class="o">*</span> <span class="n">n_features</span><span class="p">)]</span>
 
 <span class="c1"># Run classifier with cross-validation and plot ROC curves</span>
-<span class="n">cv</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">cv</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">classifier</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">)</span> <span class="c1">#C=1</span>
 
 <span class="n">mean_tpr</span> <span class="o">=</span> <span class="mf">0.0</span>
