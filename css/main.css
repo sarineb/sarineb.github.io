@@ -90,14 +90,14 @@ dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
 /* HYPERLINKS */
 a { 
   text-decoration: none;
-  color: #E74C3C;
+  color: #226275 /*#107896 #E74C3C*/;
   -webkit-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   -moz-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   -ms-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   -o-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
 }
-a:hover, a:focus, a:active { text-decoration: none; border: none;color: #C0392B }
+a:hover, a:focus, a:active { text-decoration: none; border: none;color: #43ABC9 /*#C0392B*/ }
 /* MEDIA */
 figure {margin: 0}
 img, object, embed, video {max-width: 100%; _width: 100%} /* Fluid images */
@@ -109,11 +109,11 @@ abbr[title], dfn[title] {border-bottom: 1px dotted #333; cursor: help}
 
 /* MARKED/INSERTED/DELETED AND SELECTED TEXT */
 ins, mark {text-decoration: none}
-mark {background: #c47529}
-ins {background: #d49855}
+mark {background: #3395b2}
+ins {background: #37a2c1}
 del {text-decoration: line-through}
-::-moz-selection {background: #E74C3C; color: #fff; text-shadow: none} /* selected text */
-::selection {background: #E74C3C; color: #fff; text-shadow: none} /* selected text */
+::-moz-selection {background: #2a7c93; color: #fff; text-shadow: none} /* selected text */
+::selection {background: #2a7c93; color: #fff; text-shadow: none} /* selected text */
 
 /* OTHERS */
 strong, b, dt { font-weight: bold}
@@ -258,7 +258,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 
 .tab a.active {
   padding-top: 10px;
-  color: #e74c3c;
+  color: #226275 /*#e74c3c*/;
 }
 .tab a i{
   font-size: 16px;
@@ -388,7 +388,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   overflow: hidden;
   width: 100%;
   height: 99%;
-  background-color: rgba(231, 76, 60,.6);
+  background-color: rgba(67,171,201,0.6) /*rgba(231, 76, 60,.6)*/;
   text-align: center;
   opacity:0;
   filter: alpha(opacity=0);
@@ -439,7 +439,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   display:inline-block;
   margin: 0 10px 10px 0;    
   padding: 14px 20px;  
-  background: #E74C3C;
+  background: #3395b2;
   color: #fff;
   font-weight: bold;
   font-size: 13px;
@@ -495,12 +495,12 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .label-danger {
-  background-color: #d9534f;
+  background-color: #43ABC9 /*#d9534f*/;
 }
 
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #c9302c;
+  background-color: #43ABC9 /*#c9302c*/;
 }
 
 .label-success {
