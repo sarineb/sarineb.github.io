@@ -90,7 +90,7 @@ dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
 /* HYPERLINKS */
 a { 
   text-decoration: none;
-  color: #226275 /*#107896 #E74C3C*/;
+  color: #3395b2 /* #226275 #107896 #E74C3C*/;
   -webkit-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   -moz-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   -ms-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
@@ -216,7 +216,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   padding: 30px 20px;
   background: #fff;
   border: 1px solid #f1f1f1;
-  box-shadow: 0px 6px #c0392b;
+  box-shadow: 0px 6px #226275  /*#3395b2 #c0392b*/;
   border-radius: 0px 0px 4px 4px;
 }
 
