@@ -1,0 +1,129 @@
+% LaTeX resume using res.cls
+\documentclass[11pt]{res-modified}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\usepackage[margin=0.65in]{geometry}
+\setlength{\topmargin}{-0.8in}  % Start text higher on the page 
+%\setlength{\bottommargin}{-0.8in}  % Start text higher on the page 
+\setlength{\textheight}{10in}  % increase textheight to fit more on a page
+\setlength{\headsep}{0.2in}     % space between header and text
+\setlength{\headheight}{6pt}   % make room for header
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+%\lhead{\hspace*{-\sectionwidth}Sarine Babikian} % force lhead all the way left
+%\rhead{Page \thepage}  % put page number at right
+\cfoot{}  % the footer is empty
+\pagestyle{fancy} % set pagestyle for the document
+\usepackage[none]{hyphenat}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\urlstyle{sf}
+\begin{document} 
+\sloppy
+\thispagestyle{empty} % this page does not have a header
+
+% Center the name over the entire width of resume:
+%\moveleft.5\hoffset\centerline{\large\bf SARINE BABIKIAN}
+%\moveleft.5\hoffset\centerline{\large\bf SARINE BABIKIAN}
+ \textbf{\Large SARINE BABIKIAN}\\
+% Draw a horizontal line the whole width of resume:
+% \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+% \moveleft.5\hoffset\centerline{254 South Madison Avenue, \#15}
+Pasadena, CA\\
+818-913-4168  \hfill \url{ http://sarinebabikian.com}\\
+sarine.babikian@gmail.com \hfill \url{ http://linkedin.com/in/sbabikian}\\
+
+ % Draw a horizontal line the whole width of resume:
+ \vspace{-15pt}
+\moveleft\hoffset\vbox{\hrule width\textwidth height 0.5pt}
+\vspace{-25pt}
+\begin{resume}
+
+\section{WORK EXPERIENCE} 
+\vspace{1mm}
+{\bf Research Assistant}, \textit{University of Southern California, Los Angeles, CA} \hfill 2012 - present \\
+\textit{Understanding the details of human movement patterns and their control in the nervous system.}
+\begin{itemize}
+\item Designed human data collection experiments to gather data from multiple sensors (EEG, EMG, load cells, accelerometers).
+%\item Designed and set up human data collection experiments using electroencephalography (EEG), fingertip forces, accelerometers, electromyogram (EMG) and functional Magnetic Resonance Imaging (fMRI). 
+%\item Recruited human subjects, organized and led data collection.
+\item Implemented machine learning using linear discriminant analysis combined with common spatial patterns to show that brain activity is correlated with variability in movement details.
+\item Implemented a linear mixed-effects model to demonstrate that the relationship between prediction and ground truth is statistically-significant, while taking into account participant-specific dependencies.  
+\item Developed and demonstrated that a mathematical model of brain connections can reliably reproduce experimentally observed variability in brain activity.
+\item Worked independently and in teams; and mentored other students with their own projects. 
+\item Communicated findings to different audiences and at national and international scientific conferences. 
+\end{itemize}
+
+{\bf Teaching Assistant}, \textit{University of Southern California, Los Angeles, CA} \hfill 2013
+\begin{itemize}
+\item Assisted in teaching and preparing class material for a course on neuromuscular systems.
+\item Prepared and delivered lectures on simulations of differential equations and programming tutorials.
+\item Led weekly office hours, supervised students in their final projects, graded homework and exams.
+\end{itemize}
+
+{\bf Mechanical Engineering Consultant}, \textit{Pierre Dammous and Partners, Beirut, Lebanon} \hfill 2009 - 2011
+\begin{itemize}
+\item Designed heating, ventilation, and air-conditioning (HVAC) networks for residential, commercial, university, and hospital buildings in Lebanon and the Gulf region.
+%\item Performed project schematic design evaluation for compliance with MEP work.
+%\item Worked both individually and in teams and assigned tasks to finish projects by deadline.
+\item Worked both individually and in teams; and led multiple projects from start to submission.
+\end{itemize}
+
+%{\bf Information Technology Assistant}, \textit{American University of Beirut, Lebanon} \hfill Oct 2007 - Jun 2009 
+%\begin{itemize}
+%\item Assisted faculty and students in computer hardware and software set up and maintenance.
+%\item Organized and maintained records of acquired hardware and software. 
+%\end{itemize}
+
+\section{EDUCATION}
+\vspace{1mm}
+\textbf{Ph.D.}, Mechanical Engineering, \textit{University of Southern California, Los Angeles, CA}  \hfill 2017\\
+%Dissertation: Coordination in multi-muscle systems: from control theory to cortex.
+\textbf{M.S.}, Biomedical Engineering, \textit{University of Southern California, Los Angeles, CA} \hfill 2012\\
+\textbf{B.Eng.}, Mechanical Engineering, \textit{American University of Beirut, Lebanon} \hfill 2009
+
+
+\section{SKILLS}
+\vspace{5mm}
+\begin{itemize}
+\item Data analysis, data visualization, machine learning, statistics, optimization, mathematical modeling
+%\item Lab: EEG, EMG, fMRI, EKG
+\item Programming: Matlab, Python, R
+\end{itemize}
+
+\section{AWARDS AND HONORS}
+\vspace{1mm}
+{WiSE Travel Grant}, \textit{University of Southern California, Los Angeles, CA} \hfill 2015 - 2017 \\
+{Dean's Award for Creative Achievement}, \textit{American University of Beirut, Lebanon} \hfill 2009 \\
+{Dean's Honor List}, \textit{American University of Beirut, Lebanon} \hfill 2008 - 2009
+
+\section{VOLUNTEERING EXPERIENCE}
+\vspace{1mm}
+{Piano Teacher}, \textit{A Place Called Home, Los Angeles, CA} \hfill 2014-2016\\
+{Organizer and Host of Outreach Events}, \textit{University of Southern California, Los Angeles, CA} \hfill 2013-2017\\
+{Viterbi Graduate Mentor}, \textit{University of Southern California, Los Angeles, CA} \hfill 2015-2016\\
+
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
